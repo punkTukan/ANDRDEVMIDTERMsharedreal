@@ -1,0 +1,19 @@
+sources 
+
+set drawable
+https://stackoverflow.com/questions/6931900/programmatically-set-left-drawable-in-a-textview
+
+check true for all
+https://stackoverflow.com/questions/67805448/can-i-check-if-condition-is-true-for-all-elements-in-a-list-on-kotlin
+
+activity with param 
+https://stackoverflow.com/questions/3913592/start-an-activity-with-a-parameter
+
+all element
+https://stackoverflow.com/questions/67805448/can-i-check-if-condition-is-true-for-all-elements-in-a-list-on-kotlin
+
+shared prefernces
+https://stackoverflow.com/questions/11688689/save-variables-after-quitting-application
+
+removing title bar 
+https://codinginflow.com/tutorials/android/remove-the-actionbar

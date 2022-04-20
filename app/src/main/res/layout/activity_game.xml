@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72FAB26A"
+    tools:context=".GameActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/topMid"
+        android:layout_width="@dimen/buttonWidthAndHeight"
+        android:layout_height="@dimen/buttonWidthAndHeight"
+        android:background="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="onTurnMade"
+        app:layout_constraintBottom_toTopOf="@+id/midMid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/topLeft"
+        android:layout_width="@dimen/buttonWidthAndHeight"
+        android:layout_height="@dimen/buttonWidthAndHeight"
+        android:background="?android:attr/listChoiceIndicatorSingle"
+        android:onClick="onTurnMade"
+        app:layout_constraintBottom_toTopOf="@+id/midLeft"
+        app:layout_constraintEnd_toStartOf="@+id/topMid"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/topRight"
+        android:layout_width="@dimen/buttonWidthAndHeight"
+        android:layout_height="@dimen/buttonWidthAndHeight"
+        android:background="#00FAB26A"
+        android:onClick="onTurnMade"
+        app:layout_constraintBottom_toTopOf="@+id/midRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toEndOf="@+id/topMid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.916" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/midMid"
+        android:layout_width="@dimen/buttonWidthAndHeight"
+        android:layout_height="@dimen/buttonWidthAndHeight"
+        android:background="#00FAB26A"
+        android:onClick="onTurnMade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botMid"
+        android:layout_width="@dimen/buttonWidthAndHeight"
+        android:layout_height="@dimen/buttonWidthAndHeight"
+        android:background="#00FAB26A"
+        android:onClick="onTurnMade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/midMid"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/playAgainButton"
+        android:layout_width="212dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="#ffff8800"
+        android:onClick="restartGame"
+        android:text="PLAY AGAIN!"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botMid" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botLeft"
+        android:layout_width="@dimen/buttonWidthAndHeight"
+        android:layout_height="@dimen/buttonWidthAndHeight"
+        android:background="#00FAB26A"
+        android:onClick="onTurnMade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botMid"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/midLeft"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botRight"
+        android:layout_width="@dimen/buttonWidthAndHeight"
+        android:layout_height="@dimen/buttonWidthAndHeight"
+        android:background="#00FAB26A"
+        android:onClick="onTurnMade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toEndOf="@+id/botMid"
+        app:layout_constraintTop_toBottomOf="@+id/midRight"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/midRight"
+        android:layout_width="@dimen/buttonWidthAndHeight"
+        android:layout_height="@dimen/buttonWidthAndHeight"
+        android:background="#00FAB26A"
+        android:onClick="onTurnMade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.303"
+        app:layout_constraintStart_toEndOf="@+id/midMid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/midLeft"
+        android:layout_width="@dimen/buttonWidthAndHeight"
+        android:layout_height="@dimen/buttonWidthAndHeight"
+        android:background="#00FAB26A"
+        android:onClick="onTurnMade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/midMid"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        style="@style/Divider"
+        android:backgroundTint="#E38802"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/midMid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topMid" />
+
+    <View
+        style="@style/Divider"
+        android:backgroundTint="#E38802"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toTopOf="@+id/botMid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/midMid" />
+
+    <View
+        android:id="@+id/view7"
+        style="@style/VerticalDivider"
+        android:background="#E38802"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/midMid"
+        app:layout_constraintStart_toEndOf="@+id/midLeft"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        style="@style/VerticalDivider"
+        android:background="#E38802"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/midRight"
+        app:layout_constraintStart_toEndOf="@+id/midMid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="222dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="WON!"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/topMid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
